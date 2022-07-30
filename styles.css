@@ -1,0 +1,80 @@
+#grid{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid rgb(146, 99, 99);
+    margin-top: 4%;
+    background-color: whitesmoke;
+    border-radius: 4%;
+
+}
+body{
+    text-align: center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1056.44 108.88L1081.97 108.88L1081.97 134.41L1056.44 134.41z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M375.21 388.03a48.96 48.96 0 1 0 42.42 88.26z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M983.07 428.04 a43.71 43.71 0 1 0 87.42 0 a43.71 43.71 0 1 0 -87.42 0z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1235.55 210.68L1290.05 210.68L1290.05 220.12L1235.55 220.12z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M242.43 227.4L269.2 227.4L269.2 268.01L242.43 268.01z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1026.4 215.24 a19.86 19.86 0 1 0 39.72 0 a19.86 19.86 0 1 0 -39.72 0z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M352.68 103.94a12.92 12.92 0 1 0 14.14-21.63z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M38.24 52.46 a20.2 20.2 0 1 0 40.4 0 a20.2 20.2 0 1 0 -40.4 0z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M769.49 110.58L807.3 110.58L807.3 143.2L769.49 143.2z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1268.26 71.46 a15.36 15.36 0 1 0 30.72 0 a15.36 15.36 0 1 0 -30.72 0z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M779.35 529.63L797.31 529.63L797.31 547.59L779.35 547.59z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M975.24 24.78L1002.49 24.78L1002.49 65.93L975.24 65.93z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M779.02 520.51L815.57 520.51L815.57 557.06L779.02 557.06z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M1123.84 226.91L1152.02 226.91L1152.02 262.52L1123.84 262.52z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M904.11 110.57a15.57 15.57 0 1 0-31.14-0.37z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M171.25 139.09a30.14 30.14 0 1 0 2.7-60.22z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1135.94 131.44L1162.58 131.44L1162.58 160.38L1135.94 160.38z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1354.77 265.94L1386.83 265.94L1386.83 298L1354.77 298z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M208.31 256.46 a51.73 51.73 0 1 0 103.46 0 a51.73 51.73 0 1 0 -103.46 0z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1311.67 40.46a24.97 24.97 0 1 0-49.53 6.37z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M796.81 497.7a9.86 9.86 0 1 0-19.3-4.03z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M572.88 156.99L591.48 156.99L591.48 196.21L572.88 196.21z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M243.91 81.01L260.7 81.01L260.7 101.28L243.91 101.28z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M449.83 165.69a7.41 7.41 0 1 0-2.78 14.56z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M739.51 81.91L771.69 81.91L771.69 114.09L739.51 114.09z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M910.15 292.04 a39.02 39.02 0 1 0 78.04 0 a39.02 39.02 0 1 0 -78.04 0z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1344.42 414.94L1351.76 414.94L1351.76 465.88L1344.42 465.88z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M31.02 412.32 a40.86 40.86 0 1 0 81.72 0 a40.86 40.86 0 1 0 -81.72 0z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M104.28 164.15L135.64 164.15L135.64 184.84L104.28 184.84z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M230.05 551.97L230.82 551.97L230.82 552.74L230.05 552.74z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M130.9 276.92a11.68 11.68 0 1 0 20.18-11.76z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M522.76 59.7L577.54 59.7L577.54 114.48L522.76 114.48z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M390.11 205.12 a46.49 46.49 0 1 0 92.98 0 a46.49 46.49 0 1 0 -92.98 0z' stroke='%23e73635'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  #button{
+    margin-top: 10%;
+    
+
+  }
+  #result{
+    color: rgb(168, 39, 93);
+    font-size: 2rem;
+  }
+  h1{
+    color: rgb(176, 43, 43);
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  /* button styling */ 
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+    margin-top: 5px;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+   
