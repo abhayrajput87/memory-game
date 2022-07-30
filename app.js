@@ -126,7 +126,7 @@ function flipCard()
    cards[cardId].removeEventListener('click',flipCard);
    console.log(cardChosen)
    if(cardChosen.length===2){
-    setTimeout(checkmatch,200)//Set time out is optional function
+    setTimeout(checkmatch,500)//Set time out is optional function
     //we used settimeout to animation
    }
 
