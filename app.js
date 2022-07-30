@@ -53,7 +53,6 @@ const cardArray=[
 
 let cardChosen=[];       //This array will store the flipped card // we used let keywords because we will re-initialize arrays
 let cardChosenIds=[];
-let cardswon=[];
 let cards=[];           //This array wil store the all images element of the cards
 
 /**********/
@@ -87,7 +86,7 @@ function checkwin(){
     }
 
 /*******CHECKMATCH FUNCTION*******/
-let count=0;   //It will have data of score
+ //It will have data of score
 function checkmatch()
 {  
 
@@ -126,7 +125,7 @@ function flipCard()
    cards[cardId].removeEventListener('click',flipCard);
    console.log(cardChosen)
    if(cardChosen.length===2){
-    setTimeout(checkmatch,500)//Set time out is optional function
+    setTimeout(checkmatch,200)//Set time out is optional function
     //we used settimeout to animation
    }
 
@@ -144,11 +143,14 @@ function restart()
 
 }
 
-
+let cardswon=[];
+var count;
 
 /******gamestart*****/
 document.querySelector("button").addEventListener('click',gametime);
 function game(){
+    cardswon=[];  //Cardswon array an count both should be zero before starting game every time
+    count=0;
     document.querySelector(".heading").innerHTML='Score: <span id="result">0</span>'
     document.querySelector("button").removeAttribute('id','button');
     document.querySelector('button').innerHTML='Restart Game'
@@ -159,6 +161,7 @@ function game(){
     cards=document.querySelectorAll('img');
 }
 function gametime(){
+  
     document.querySelector("button").removeEventListener('click',gametime);
     setTimeout(game,400)
 }
