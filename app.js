@@ -125,8 +125,8 @@ function flipCard()
    cards[cardId].removeEventListener('click',flipCard);
    console.log(cardChosen)
    if(cardChosen.length===2){
-    setTimeout(checkmatch,400)//Set time out is optional function
-    //we used settimeout to animation
+    setTimeout(checkmatch,500)
+    //we used settimeout to animation to show the 2nd card after flipping
    }
 
 }
