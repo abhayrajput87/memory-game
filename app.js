@@ -125,7 +125,7 @@ function flipCard()
    cards[cardId].removeEventListener('click',flipCard);
    console.log(cardChosen)
    if(cardChosen.length===2){
-    setTimeout(checkmatch,200)//Set time out is optional function
+    setTimeout(checkmatch,400)//Set time out is optional function
     //we used settimeout to animation
    }
 
@@ -137,7 +137,7 @@ function restart()
     console.log("hii")
     for(let j=0;j<12;j++)
     grid.removeChild(grid.lastElementChild);
-    gametime()
+    game()
     
     
 
@@ -147,8 +147,9 @@ let cardswon=[];
 var count;
 
 /******gamestart*****/
-document.querySelector("button").addEventListener('click',gametime);
+document.querySelector("button").addEventListener('click',game);
 function game(){
+    document.querySelector("button").removeEventListener('click',game);
     cardswon=[];  //Cardswon array an count both should be zero before starting game every time
     count=0;
     document.querySelector(".heading").innerHTML='Score: <span id="result">0</span>'
@@ -160,8 +161,4 @@ function game(){
     createBoard();
     cards=document.querySelectorAll('img');
 }
-function gametime(){
-  
-    document.querySelector("button").removeEventListener('click',gametime);
-    setTimeout(game,400)
-}
+
